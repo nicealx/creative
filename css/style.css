@@ -487,4 +487,51 @@ input:focus, button:focus {
   font-size: 50px;
   margin-right: 20px;
 }
+
+.feature {
+  background: url(/img/feature/feature-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 95px;
+  padding-bottom: 100px;
+  color: #ffffff;
+}
+
+.feature-text {
+  max-width: 485px;
+}
+
+.feature-text__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.feature-text__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 68px;
+}
+
+.feature-text__list {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  background-color: #11749e;
+  padding: 13px 18px;
+}
+
+.feature-text__list_first {
+  max-width: 370px;
+  width: 100%;
+}
+
+.feature-text__list_second {
+  max-width: 400px;
+  width: 100%;
+}
+
+.feature-text__list_third {
+  max-width: 430px;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
