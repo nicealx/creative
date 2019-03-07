@@ -220,13 +220,13 @@ input:focus, button:focus {
           transform: translateX(-30px);
 }
 
-.feature {
+.about {
   background-color: #11749e;
   text-align: center;
   color: #ffffff;
 }
 
-.feature-title {
+.about-title {
   position: relative;
   font-size: 38px;
   text-transform: uppercase;
@@ -235,7 +235,7 @@ input:focus, button:focus {
   margin: auto;
 }
 
-.feature-title:after {
+.about-title:after {
   content: 'W';
   position: absolute;
   top: 50%;
@@ -248,12 +248,12 @@ input:focus, button:focus {
           transform: translateX(-51%) translateY(-12%);
 }
 
-.feature-items {
+.about-items {
   margin-top: 145px;
   padding-bottom: 130px;
 }
 
-.feature-item {
+.about-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,19 +266,19 @@ input:focus, button:focus {
           align-items: center;
 }
 
-.feature-item__title {
+.about-item__title {
   text-transform: uppercase;
   margin-top: 18px;
   font-weight: 500;
 }
 
-.feature-item__text {
+.about-item__text {
   margin-top: 28px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.feature-item__icon {
+.about-item__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
