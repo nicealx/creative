@@ -1,0 +1,31 @@
+.action
+  background-color: $bgc
+  color: #ffffff
+  &-title
+    position: relative
+    font-size: 38px
+    text-transform: uppercase
+    padding-top: 170px
+    font-weight: 500
+    margin: auto
+    &:after
+      content: 'W'
+      position: absolute
+      top: 50%
+      left: 50%
+      font-size: 250px
+      font-family: 'Roboto'
+      font-weight: 700
+      opacity: 0.2
+      transform: translateX(-51%) translateY(-12%)
+  &-item
+    display: flex
+    align-items: center
+    &__text
+      font-size: 14px
+      font-weight: 400
+      padding-top: 115px
+      padding-bottom: 115px
+    &__icon
+      font-size: 50px
+      margin-right: 20px

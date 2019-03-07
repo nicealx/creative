@@ -1,0 +1,45 @@
+.feature
+  background-color: $bgc
+  text-align: center
+  color: #ffffff
+  &-title
+    position: relative
+    font-size: 38px
+    text-transform: uppercase
+    padding-top: 170px
+    font-weight: 500
+    margin: auto
+    &:after
+      content: 'W'
+      position: absolute
+      top: 50%
+      left: 50%
+      font-size: 250px
+      font-family: 'Roboto'
+      font-weight: 700
+      opacity: 0.2
+      transform: translateX(-51%) translateY(-12%)
+  &-items
+    margin-top: 145px
+    padding-bottom: 130px
+  &-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+      text-transform: uppercase
+      margin-top: 18px
+      font-weight: 500
+    &__text
+      margin-top: 28px
+      font-size: 14px
+      font-weight: 400
+    &__icon
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 28px
+      height: 135px
+      width: 135px
+      background-color: rgba(#2e85aa, 0.5)
+      border-radius: 50%
