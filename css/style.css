@@ -534,4 +534,74 @@ input:focus, button:focus {
   max-width: 430px;
   width: 100%;
 }
+
+.team {
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+
+.team-title {
+  position: relative;
+  font-size: 38px;
+  text-transform: uppercase;
+  padding-top: 170px;
+  font-weight: 500;
+  margin: auto;
+}
+
+.team-title:after {
+  content: 'T';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 250px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  opacity: 0.2;
+  -webkit-transform: translateX(-51%) translateY(-12%);
+          transform: translateX(-51%) translateY(-12%);
+}
+
+.team-subtitle {
+  font-weight: normal;
+  font-size: 30px;
+  margin-top: 140px;
+}
+
+.team-items {
+  margin-top: 75px;
+  padding-bottom: 130px;
+}
+
+.team-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-item-name {
+  background-color: #fff;
+  margin-top: -45px;
+  padding: 15px 40px;
+}
+
+.team-item-name__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #11749e;
+}
+
+.team-item-name__text {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
