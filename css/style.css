@@ -71,7 +71,7 @@ img {
   max-width: 100%;
 }
 
-input:focus, button:focus {
+input:focus, button:focus, textarea:focus {
   outline: none;
 }
 
@@ -743,5 +743,20 @@ input:focus, button:focus {
 
 .form {
   width: 100%;
+}
+
+.footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 50px 0;
+  font-size: 14px;
+}
+
+.footer-right {
+  float: right;
+}
+
+.footer-left {
+  float: left;
 }
 /*# sourceMappingURL=style.css.map */
