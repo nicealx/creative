@@ -771,6 +771,9 @@ input:focus, button:focus, textarea:focus {
   .header-top-menu {
     display: none;
   }
+  .header-top-social {
+    font-size: 20px;
+  }
   .header-bottom-wrap__title {
     font-size: 100px;
   }
@@ -798,6 +801,9 @@ input:focus, button:focus, textarea:focus {
   .news-two__img {
     margin-top: 40px;
     width: 100%;
+  }
+  .blog-subtitle {
+    font-size: 20px;
   }
   .blog-item {
     margin-bottom: 40px;
