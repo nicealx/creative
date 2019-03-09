@@ -220,6 +220,10 @@ input:focus, button:focus, textarea:focus {
           transform: translateX(-30px);
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .about {
   background-color: #11749e;
   text-align: center;
@@ -758,5 +762,106 @@ input:focus, button:focus, textarea:focus {
 
 .footer-left {
   float: left;
+}
+
+@media (min-width: 575px) {
+  .header {
+    height: 700px;
+  }
+  .header-top-menu {
+    display: none;
+  }
+  .header-bottom-wrap__title {
+    font-size: 100px;
+  }
+  .header-bottom-wrap__subtitle {
+    font-size: 20px;
+  }
+  .header-bottom-scroll {
+    margin-top: 50px;
+  }
+  .header-bottom-scroll__text {
+    font-size: 20px;
+  }
+  .about-title {
+    font-size: 20px;
+  }
+  .about-item {
+    margin-bottom: 50px;
+  }
+  .news-block-one {
+    margin-bottom: 40px;
+  }
+  .news-one__img {
+    width: 100%;
+  }
+  .news-two__img {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .blog-item {
+    margin-bottom: 40px;
+  }
+  .blog-item__image img {
+    width: 630px;
+  }
+  .blog-item__title {
+    font-size: 30px;
+  }
+  .blog-item__text {
+    font-size: 20px;
+  }
+  .action-item__icon {
+    font-size: 80px;
+  }
+  .action-item__text {
+    padding: 25px 0;
+    font-size: 16px;
+  }
+  .feature-text {
+    max-width: 690px;
+  }
+  .feature-text__list {
+    font-size: 18px;
+  }
+  .feature-text__list_first {
+    max-width: 560px;
+  }
+  .feature-text__list_second {
+    max-width: 630px;
+  }
+  .feature-text__list_third {
+    max-width: 700px;
+  }
+  .feature-image {
+    display: none;
+  }
+  .team-item {
+    margin-bottom: 30px;
+  }
+  .team-item__image img {
+    width: 500px;
+  }
+  .contact-title {
+    font-size: 20px;
+  }
+  .contact-form__input {
+    max-width: 100%;
+  }
+  .contact-form__input::-webkit-input-placeholder {
+    font-size: 30px;
+  }
+  .contact-form__input:-ms-input-placeholder {
+    font-size: 30px;
+  }
+  .contact-form__input::-ms-input-placeholder {
+    font-size: 30px;
+  }
+  .contact-form__input::placeholder {
+    font-size: 30px;
+  }
+  .contact-form__button {
+    font-size: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
