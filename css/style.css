@@ -764,7 +764,7 @@ input:focus, button:focus, textarea:focus {
   float: left;
 }
 
-@media (min-width: 575px) {
+@media (max-width: 575px) {
   .header {
     height: 700px;
   }
