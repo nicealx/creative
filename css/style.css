@@ -760,6 +760,15 @@ input:focus, button:focus, textarea:focus {
   float: right;
 }
 
+.footer-right a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
 .footer-left {
   float: left;
 }

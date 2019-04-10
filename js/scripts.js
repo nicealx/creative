@@ -16,4 +16,3 @@ for(let scrollArrow of scrollArrows){
       });
     });
 }
-    
