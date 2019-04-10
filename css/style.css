@@ -764,6 +764,10 @@ input:focus, button:focus, textarea:focus {
   float: left;
 }
 
+#map {
+  height: 550px;
+}
+
 @media (max-width: 575px) {
   .header {
     height: 700px;

@@ -1,18 +1,44 @@
 // $('.header-bottom-scroll').click(function(){
 //   $('html, body').animate({ scrollTop: $('.feature').offset().top }, 500);
 // });
+ymaps.ready(init);
 
+function init() {
+    var geolocation = ymaps.geolocation,
+        myMap = new ymaps.Map('map', {
+            center: [55, 34],
+            zoom: 10
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
 
-function initMap() {
-  var coordinates = {lat: 53.355062, lng: 83.769559},
-  
-      map = new google.maps.Map(document.getElementById('map'), {
-          center: coordinates
-      });
+    // Сравним положение, вычисленное по ip пользователя и
+    // положение, вычисленное средствами браузера.
+    geolocation.get({
+        provider: 'yandex',
+        mapStateAutoApply: true
+    }).then(function (result) {
+        // Красным цветом пометим положение, вычисленное через ip.
+        result.geoObjects.options.set('preset', 'islands#redCircleIcon');
+        result.geoObjects.get(0).properties.set({
+            balloonContentBody: 'Мое местоположение'
+        });
+        myMap.geoObjects.add(result.geoObjects);
+    });
+
+    geolocation.get({
+        provider: 'browser',
+        mapStateAutoApply: true
+    }).then(function (result) {
+        // Синим цветом пометим положение, полученное через браузер.
+        // Если браузер не поддерживает эту функциональность, метка не будет добавлена на карту.
+        result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
+        myMap.geoObjects.add(result.geoObjects);
+    });
 }
 
 const scrollArrow = document.querySelector('.header-bottom-scroll__arrow');
 
 scrollArrow.addEventListener('click', (e) => {
   e.preventDefault();
-})
+});
