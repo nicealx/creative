@@ -1,6 +1,6 @@
-$('.header-bottom-scroll').click(function(){
-  $('html, body').animate({ scrollTop: $('.feature').offset().top }, 500);
-});
+// $('.header-bottom-scroll').click(function(){
+//   $('html, body').animate({ scrollTop: $('.feature').offset().top }, 500);
+// });
 
 
 function initMap() {
@@ -10,3 +10,9 @@ function initMap() {
           center: coordinates
       });
 }
+
+const scrollArrow = document.querySelector('.header-bottom-scroll__arrow');
+
+scrollArrow.addEventListener('click', (e) => {
+  e.preventDefault();
+})
