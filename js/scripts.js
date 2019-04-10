@@ -2,8 +2,18 @@
 //   $('html, body').animate({ scrollTop: $('.feature').offset().top }, 500);
 // });
 
-const scrollArrow = document.querySelector('.header-bottom-scroll__arrow');
+const scrollArrows = document.querySelectorAll('a[href*="#"]');
 
-scrollArrow.addEventListener('click', (e) => {
-  e.preventDefault();
-});
+for(let scrollArrow of scrollArrows){
+    scrollArrow.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const id = scrollArrow.getAttribute('href');
+
+      document.querySelector('' + id).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+      });
+    });
+}
+    
