@@ -22,3 +22,11 @@ $('.hamburger-btn').on('click', () => {
   $('.header-top-menu').toggleClass('header-top-menu_active');
   $('.mobile-menu__link').removeClass('header-top-menu_active');
 });
+
+$('.one-time').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});

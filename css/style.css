@@ -795,20 +795,22 @@ input:focus, button:focus, textarea:focus {
   .header-top-menu {
     position: fixed;
     top: -45px;
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
     opacity: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    z-index: 9997;
+    z-index: 97;
     padding: 40px 30px;
     background-color: #fff;
     border-radius: 5px;
   }
   .header-top-menu_active {
     opacity: 1;
-    -webkit-transform: translateX(-73%);
-            transform: translateX(-73%);
+    -webkit-transform: translateX(-95px);
+            transform: translateX(-95px);
+    -webkit-box-shadow: 2px 2px 5px #000;
+            box-shadow: 2px 2px 5px #000;
   }
   .header-top-menu ul {
     -webkit-box-orient: vertical;
@@ -843,6 +845,11 @@ input:focus, button:focus, textarea:focus {
     width: 100vw;
     margin-left: -15px;
   }
+  .contact-form__group {
+    max-width: 358px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .contact-form__input {
     margin-right: 0;
   }
@@ -853,7 +860,7 @@ input:focus, button:focus, textarea:focus {
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 9998;
+    z-index: 98;
   }
   .hamburger-btn {
     display: block;
