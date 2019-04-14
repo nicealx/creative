@@ -220,10 +220,6 @@ input:focus, button:focus, textarea:focus {
           transform: translateX(-30px);
 }
 
-.mobile-menu {
-  display: none;
-}
-
 .about {
   background-color: #11749e;
   text-align: center;
@@ -777,110 +773,125 @@ input:focus, button:focus, textarea:focus {
   height: 550px;
 }
 
-@media (max-width: 575px) {
-  .header {
-    height: 700px;
+@media (max-width: 576px) {
+  .hamburger span:before, .hamburger span:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #000;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
-  .header-top-menu {
+  .header-top {
+    position: relative;
+  }
+  .header-top:before {
+    top: 35px;
+  }
+  .header-top-logo {
     display: none;
   }
+  .header-top-menu {
+    position: fixed;
+    top: -45px;
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 9997;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .header-top-menu_active {
+    opacity: 1;
+    -webkit-transform: translateX(-73%);
+            transform: translateX(-73%);
+  }
+  .header-top-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-top-menu ul a {
+    color: #000000;
+  }
+  .header-top-menu ul a li {
+    padding-bottom: 10px;
+  }
+  .header-top-menu ul a li:hover:before {
+    opacity: 0;
+  }
   .header-top-social {
-    font-size: 20px;
+    display: none;
   }
   .header-bottom-wrap__title {
-    font-size: 100px;
+    font-size: 50px;
   }
   .header-bottom-wrap__subtitle {
     font-size: 20px;
-  }
-  .header-bottom-scroll {
-    margin-top: 50px;
-  }
-  .header-bottom-scroll__text {
-    font-size: 20px;
-  }
-  .about-title {
-    font-size: 20px;
-  }
-  .about-item {
-    margin-bottom: 50px;
-  }
-  .news-block-one {
-    margin-bottom: 40px;
+    letter-spacing: 0;
   }
   .news-one__img {
-    width: 100%;
+    width: 100vw;
+    margin-left: -15px;
   }
   .news-two__img {
-    margin-top: 40px;
-    width: 100%;
-  }
-  .blog-subtitle {
-    font-size: 20px;
-  }
-  .blog-item {
-    margin-bottom: 40px;
-  }
-  .blog-item__image img {
-    width: 630px;
-  }
-  .blog-item__title {
-    font-size: 30px;
-  }
-  .blog-item__text {
-    font-size: 20px;
-  }
-  .action-item__icon {
-    font-size: 80px;
-  }
-  .action-item__text {
-    padding: 25px 0;
-    font-size: 16px;
-  }
-  .feature-text {
-    max-width: 690px;
-  }
-  .feature-text__list {
-    font-size: 18px;
-  }
-  .feature-text__list_first {
-    max-width: 560px;
-  }
-  .feature-text__list_second {
-    max-width: 630px;
-  }
-  .feature-text__list_third {
-    max-width: 700px;
-  }
-  .feature-image {
-    display: none;
-  }
-  .team-item {
-    margin-bottom: 30px;
-  }
-  .team-item__image img {
-    width: 500px;
-  }
-  .contact-title {
-    font-size: 20px;
+    width: 100vw;
+    margin-left: -15px;
   }
   .contact-form__input {
-    max-width: 100%;
+    margin-right: 0;
   }
-  .contact-form__input::-webkit-input-placeholder {
-    font-size: 30px;
+  .contact-form__textarea {
+    margin-right: 0;
   }
-  .contact-form__input:-ms-input-placeholder {
-    font-size: 30px;
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9998;
   }
-  .contact-form__input::-ms-input-placeholder {
-    font-size: 30px;
+  .hamburger-btn {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
   }
-  .contact-form__input::placeholder {
-    font-size: 30px;
+  .hamburger span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 2px;
+    width: 20px;
+    background-color: #000;
   }
-  .contact-form__button {
-    font-size: 50px;
+  .hamburger span:before {
+    top: -5px;
+  }
+  .hamburger span:after {
+    top: 5px;
+  }
+  .hamburger_active span:before {
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+    width: 10px;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  .hamburger_active span:after {
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+    width: 10px;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
   }
 }
-/*# sourceMappingURL=style.css.map */

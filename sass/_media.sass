@@ -1,82 +1,101 @@
-@media (max-width: 575px)
+@media (max-width: 576px)
+  // .mobile
+  //   &-menu
+  //     display: block
+  %hamburger
+    content: ''
+    position: absolute
+    height: 2px
+    width: 20px
+    background-color: #000
+    transition: 0.2s
   .header
-    height: 700px
     &-top
-      &-menu
+      position: relative
+      &:before
+        top: 35px
+      &-logo
         display: none
+      &-menu
+        position: fixed
+        top: -45px
+        transform: translateX(-200%)
+        opacity: 0
+        transition: 0.5s
+        z-index: 9997
+        padding: 40px 30px
+        background-color: #fff
+        border-radius: 5px
+        &_active
+          opacity: 1
+          transform: translateX(-73%)
+        ul
+          flex-direction: column
+          a
+            color: #000000
+            li
+              padding-bottom: 10px
+              &:hover
+                &:before
+                  opacity: 0
       &-social
-        font-size: 20px
+        display: none
     &-bottom
       &-wrap
         &__title
-          font-size: 100px
+          font-size: 50px
         &__subtitle
           font-size: 20px
-      &-scroll
-        margin-top: 50px
-        &__text
-          font-size: 20px
-  .about
-    &-title
-      font-size: 20px
-    &-item
-      margin-bottom: 50px
+          letter-spacing: 0
   .news
-    &-block
-      &-one
-        margin-bottom: 40px
     &-one
       &__img
-        width: 100%
+        width: 100vw
+        margin-left: -15px
     &-two
       &__img
-        margin-top: 40px
-        width: 100%
-  .blog
-    &-subtitle
-      font-size: 20px
-    &-item
-      margin-bottom: 40px
-      &__image
-        img
-          width: 630px
-      &__title
-        font-size: 30px
-      &__text
-        font-size: 20px
-  .action
-    &-item
-      &__icon
-        font-size: 80px
-      &__text
-        padding: 25px 0
-        font-size: 16px
-  .feature
-    &-text
-      max-width: 690px
-      &__list
-        font-size: 18px
-        &_first
-          max-width: 560px
-        &_second
-          max-width: 630px
-        &_third
-          max-width: 700px
-    &-image
-      display: none
-  .team
-    &-item
-      margin-bottom: 30px
-      &__image
-        img
-          width: 500px
+        width: 100vw
+        margin-left: -15px
   .contact
-    &-title
-      font-size: 20px
     &-form
       &__input
-        max-width: 100%
-        &::placeholder
-          font-size: 30px
-      &__button
-        font-size: 50px
+        margin-right: 0
+      &__textarea
+        margin-right: 0
+  .hamburger
+    position: fixed
+    top: 10px
+    left: 10px
+    z-index: 9998
+    &-btn
+      display: block
+      position: relative
+      background-color: #fff
+      height: 35px
+      width: 35px
+      border-radius: 5px
+    span
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-left: -10px
+      transform: translateY(-50%)
+      height: 2px
+      width: 20px
+      background-color: #000
+      &:before
+        @extend %hamburger
+        top: -5px
+      &:after
+        @extend %hamburger
+        top: 5px
+    &_active
+      span
+        &:before
+          transform-origin: right bottom
+          width: 10px
+          transform: rotate(-30deg)
+        &:after
+          transform-origin: right top
+          width: 10px
+          transform: rotate(30deg)

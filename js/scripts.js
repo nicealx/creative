@@ -16,3 +16,9 @@ for(let scrollArrow of scrollArrows){
       });
     });
 }
+
+$('.hamburger-btn').on('click', () => {
+  $('.hamburger').toggleClass('hamburger_active');
+  $('.header-top-menu').toggleClass('header-top-menu_active');
+  $('.mobile-menu__link').removeClass('header-top-menu_active');
+});
