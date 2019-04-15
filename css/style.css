@@ -789,12 +789,19 @@ input:focus, button:focus, textarea:focus {
     padding: 20px 0;
   }
   .news-one__img {
-    width: 495px;
     margin-left: -15px;
   }
+  .news-one__img img {
+    max-width: 495px;
+  }
   .news-two__img {
-    width: 495px;
-    margin-left: -105px;
+    margin-left: -30px;
+  }
+  .news-two__img img {
+    max-width: 495px;
+  }
+  .contact-form__input {
+    max-width: 298px;
   }
 }
 
@@ -936,19 +943,29 @@ input:focus, button:focus, textarea:focus {
   }
   .news-block-one {
     padding: 20px 0;
-    margin-left: -120px;
   }
   .news-block-two {
     padding: 20px 0;
-    margin-right: -120px;
+  }
+  .news-one {
+    overflow: hidden;
   }
   .news-one__img {
     width: 495px;
     margin-left: -15px;
   }
+  .news-one__text p:first-child {
+    margin-top: 5px;
+  }
+  .news-two {
+    overflow: hidden;
+  }
   .news-two__img {
     width: 495px;
     margin-left: -151px;
+  }
+  .news-two__text p:first-child {
+    margin-top: 5px;
   }
   .blog-subtitle {
     font-size: 22px;
@@ -979,11 +996,11 @@ input:focus, button:focus, textarea:focus {
     margin-bottom: 80px;
   }
   .contact-form__group {
-    max-width: 358px;
     margin-left: auto;
     margin-right: auto;
   }
   .contact-form__input {
+    max-width: 992px;
     margin-right: 0;
   }
   .contact-form__textarea {
@@ -994,5 +1011,64 @@ input:focus, button:focus, textarea:focus {
   }
   .footer-right {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-one__img {
+    width: 100%;
+    margin-left: 0;
+  }
+  .news-one__img img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .news-two__img {
+    width: 100%;
+    margin-left: 0;
+  }
+  .news-two__img img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .feature-image {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form__group {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .header-top-menu {
+    top: -45px;
+    left: 10px;
+    padding: 10px 10px 9px 40px;
+    border-radius: 5px;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+  }
+  .header-top-menu_active {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    border: 5px;
+  }
+  .header-top-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-top-menu ul a li {
+    padding-top: 10px;
+  }
+  .hamburger-btn {
+    border-radius: 5px;
+  }
+  .hamburger_active .hamburger-btn {
+    border-radius: 5px;
   }
 }
