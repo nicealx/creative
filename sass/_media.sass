@@ -2,6 +2,15 @@
   // .mobile
   //   &-menu
   //     display: block
+  %title
+    font-size: 24px
+    padding-top: 100px
+    &:after
+      top: 60px
+      font-size: 170px
+  %items
+      margin-top: 100px
+      padding-bottom: 50px
   %hamburger
     content: ''
     position: absolute
@@ -53,9 +62,15 @@
         margin-top: 50px
   .about
     &-title
-      font-size: 24px
-      &:after
+      @extend %title
+    &-items
+      @extend %items
   .news
+    &-block
+      &-one
+        padding: 20px 0
+      &-two
+        padding: 20px 0
     &-one
       &__img
         width: 100vw
@@ -64,7 +79,42 @@
       &__img
         width: 100vw
         margin-left: -15px
+  .blog
+    &-title
+      @extend %title
+    &-subtitle
+      font-size: 22px
+      padding-left: 10px
+      padding-right: 10px
+    &-items
+      @extend %items
+  .action
+    &-item
+      &__text
+        padding: 30px 0
+  .feature
+    &-text
+      &__list
+        font-size: 15px
+        &_first
+          width: 70%
+        &_second
+          width: 80%
+        &_third
+          width: 90%
+  .team
+    &-title
+      @extend %title
+    &-subtitle
+      font-size: 22px
+      padding-left: 10px
+      padding-right: 10px
+    &-items
+      @extend %items
   .contact
+    &-title
+      @extend %title
+      margin-bottom: 80px
     &-form
       &__group
         max-width: 358px
@@ -74,6 +124,11 @@
         margin-right: 0
       &__textarea
         margin-right: 0
+  .footer
+    &-left
+      font-size: 12px
+    &-right
+      font-size: 12px
   .hamburger
     position: fixed
     top: 10px

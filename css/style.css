@@ -238,7 +238,7 @@ input:focus, button:focus, textarea:focus {
 .about-title:after {
   content: 'W';
   position: absolute;
-  top: 50%;
+  top: 130px;
   left: 50%;
   font-size: 250px;
   font-family: 'Roboto';
@@ -774,6 +774,18 @@ input:focus, button:focus, textarea:focus {
 }
 
 @media (max-width: 576px) {
+  .about-title, .blog-title, .team-title, .contact-title {
+    font-size: 24px;
+    padding-top: 100px;
+  }
+  .about-title:after, .blog-title:after, .team-title:after, .contact-title:after {
+    top: 60px;
+    font-size: 170px;
+  }
+  .about-items, .blog-items, .team-items {
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
   .hamburger span:before, .hamburger span:after {
     content: '';
     position: absolute;
@@ -841,8 +853,11 @@ input:focus, button:focus, textarea:focus {
   .header-bottom-scroll {
     margin-top: 50px;
   }
-  .about-title {
-    font-size: 24px;
+  .news-block-one {
+    padding: 20px 0;
+  }
+  .news-block-two {
+    padding: 20px 0;
   }
   .news-one__img {
     width: 100vw;
@@ -851,6 +866,34 @@ input:focus, button:focus, textarea:focus {
   .news-two__img {
     width: 100vw;
     margin-left: -15px;
+  }
+  .blog-subtitle {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .action-item__text {
+    padding: 30px 0;
+  }
+  .feature-text__list {
+    font-size: 15px;
+  }
+  .feature-text__list_first {
+    width: 70%;
+  }
+  .feature-text__list_second {
+    width: 80%;
+  }
+  .feature-text__list_third {
+    width: 90%;
+  }
+  .team-subtitle {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contact-title {
+    margin-bottom: 80px;
   }
   .contact-form__group {
     max-width: 358px;
@@ -862,6 +905,12 @@ input:focus, button:focus, textarea:focus {
   }
   .contact-form__textarea {
     margin-right: 0;
+  }
+  .footer-left {
+    font-size: 12px;
+  }
+  .footer-right {
+    font-size: 12px;
   }
   .hamburger {
     position: fixed;
