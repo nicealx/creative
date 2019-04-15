@@ -10,6 +10,7 @@
     background-color: #000
     transition: 0.2s
   .header
+    height: 100vh
     &-top
       position: relative
       &:before
@@ -19,7 +20,7 @@
       &-menu
         position: fixed
         top: -45px
-        transform: translateX(-500px)
+        left: -150px
         opacity: 0
         transition: 0.5s
         z-index: 97
@@ -28,7 +29,7 @@
         border-radius: 5px
         &_active
           opacity: 1
-          transform: translateX(-95px)
+          left: 10px
           box-shadow: 2px 2px 5px #000
         ul
           flex-direction: column
@@ -48,6 +49,12 @@
         &__subtitle
           font-size: 20px
           letter-spacing: 0
+      &-scroll
+        margin-top: 50px
+  .about
+    &-title
+      font-size: 24px
+      &:after
   .news
     &-one
       &__img

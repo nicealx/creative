@@ -770,7 +770,7 @@ input:focus, button:focus, textarea:focus {
 }
 
 #map {
-  height: 550px;
+  height: 100%;
 }
 
 @media (max-width: 576px) {
@@ -782,6 +782,9 @@ input:focus, button:focus, textarea:focus {
     background-color: #000;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+  }
+  .header {
+    height: 100vh;
   }
   .header-top {
     position: relative;
@@ -795,8 +798,7 @@ input:focus, button:focus, textarea:focus {
   .header-top-menu {
     position: fixed;
     top: -45px;
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
+    left: -150px;
     opacity: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -807,8 +809,7 @@ input:focus, button:focus, textarea:focus {
   }
   .header-top-menu_active {
     opacity: 1;
-    -webkit-transform: translateX(-95px);
-            transform: translateX(-95px);
+    left: 10px;
     -webkit-box-shadow: 2px 2px 5px #000;
             box-shadow: 2px 2px 5px #000;
   }
@@ -836,6 +837,12 @@ input:focus, button:focus, textarea:focus {
   .header-bottom-wrap__subtitle {
     font-size: 20px;
     letter-spacing: 0;
+  }
+  .header-bottom-scroll {
+    margin-top: 50px;
+  }
+  .about-title {
+    font-size: 24px;
   }
   .news-one__img {
     width: 100vw;

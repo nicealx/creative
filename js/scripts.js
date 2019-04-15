@@ -23,10 +23,10 @@ $('.hamburger-btn').on('click', () => {
   $('.mobile-menu__link').removeClass('header-top-menu_active');
 });
 
-$('.one-time').slick({
-  dots: true,
+$('.multiple-items').slick({
+  arrows: true,
   infinite: true,
-  speed: 300,
+  autoplay: true,
   slidesToShow: 1,
-  adaptiveHeight: true
+  slidesToScroll: 1
 });
