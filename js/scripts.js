@@ -24,12 +24,13 @@ $('.hamburger-btn').on('click', () => {
 });
 
 $('.multiple-items').slick({
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 3,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
+        arrows: false,
         slidesToShow: 3,
         slidesToScroll: 3
       }
@@ -37,6 +38,7 @@ $('.multiple-items').slick({
     {
       breakpoint: 600,
       settings: {
+        arrows: false,
         infinite: true,
         autoplay: true,
         slidesToShow: 2,
