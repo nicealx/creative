@@ -938,7 +938,7 @@ input:focus, button:focus, textarea:focus {
             transform: rotate(30deg);
   }
   .header {
-    height: 150vh;
+    height: 100vh;
   }
   .header-top {
     position: relative;
@@ -1072,6 +1072,9 @@ input:focus, button:focus, textarea:focus {
 }
 
 @media (max-width: 768px) {
+  .header {
+    height: 600px;
+  }
   .news-one__img {
     width: 100%;
     margin-left: 0;

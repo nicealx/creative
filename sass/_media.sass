@@ -74,7 +74,7 @@
           width: 10px
           transform: rotate(30deg)
   .header
-    height: 150vh
+    height: 100vh
     &-top
       position: relative
       &:before
@@ -196,6 +196,8 @@
       font-size: 12px
 
 @media (max-width: 768px)
+  .header
+    height: 600px
   .news
     &-one
       &__img
@@ -222,18 +224,18 @@
         padding-left: 5px
         padding-right: 5px
   .header
-      &-top
-        &-menu
-          top: -45px
-          left: 10px
-          padding: 5px 25px 5px 40px
-          border-radius: 18px
-          transform-origin: center
-          transform: translateX(-120%)
-          &_active
-            transform: translateX(0px)
-          ul
-            flex-direction: column
-            a
-              li
-                padding: 5px 0
+    &-top
+      &-menu
+        top: -45px
+        left: 10px
+        padding: 5px 25px 5px 40px
+        border-radius: 18px
+        transform-origin: center
+        transform: translateX(-120%)
+        &_active
+          transform: translateX(0px)
+        ul
+          flex-direction: column
+          a
+            li
+              padding: 5px 0
