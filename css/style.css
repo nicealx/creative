@@ -891,19 +891,13 @@ input:focus, button:focus, textarea:focus {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     z-index: 97;
-    padding: 10px 10px 9px 60px;
+    padding: 10px 10px 9px 55px;
     background-color: #fff;
     border-radius: 50px;
     -webkit-transform-origin: 16px;
             transform-origin: 16px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-  }
-  .header-top-menu_active {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    -webkit-box-shadow: 2px 2px 5px #000;
-            box-shadow: 2px 2px 5px #000;
   }
   .header-top-menu ul {
     -webkit-box-orient: horizontal;
@@ -919,6 +913,12 @@ input:focus, button:focus, textarea:focus {
   }
   .header-top-menu ul a li:hover:before {
     opacity: 0;
+  }
+  .header-top-menu_active {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-box-shadow: 2px 2px 5px #000;
+            box-shadow: 2px 2px 5px #000;
   }
   .header-top-social {
     display: none;
