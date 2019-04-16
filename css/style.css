@@ -938,7 +938,7 @@ input:focus, button:focus, textarea:focus {
             transform: rotate(30deg);
   }
   .header {
-    height: 100vh;
+    height: 150vh;
   }
   .header-top {
     position: relative;

@@ -39,9 +39,10 @@ toUp.addEventListener('click', () => {
 jQuery(function(f){
   var element = f('.toUp');
   f(window).scroll(function(){
-      element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);           
+      element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);
   });
 });
+
 
 $('.multiple-items').slick({
   slidesToShow: 4,
