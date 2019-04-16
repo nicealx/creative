@@ -961,8 +961,8 @@ input:focus, button:focus, textarea:focus {
     border-radius: 50px;
     -webkit-transform-origin: 16px;
             transform-origin: 16px;
-    -webkit-transform: translateX(-94%);
-            transform: translateX(-94%);
+    -webkit-transform: translateX(-95%);
+            transform: translateX(-95%);
   }
   .header-top-menu ul {
     -webkit-box-orient: horizontal;
