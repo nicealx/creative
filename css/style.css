@@ -839,8 +839,7 @@ input:focus, button:focus, textarea:focus {
     background-color: #fff;
     height: 35px;
     width: 35px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 50px;
   }
   .hamburger span {
     position: absolute;
@@ -858,10 +857,6 @@ input:focus, button:focus, textarea:focus {
   }
   .hamburger span:after {
     top: 5px;
-  }
-  .hamburger_active .hamburger-btn {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
   }
   .hamburger_active span:before {
     -webkit-transform-origin: right bottom;
@@ -892,24 +887,21 @@ input:focus, button:focus, textarea:focus {
   .header-top-menu {
     position: fixed;
     top: -45px;
-    left: 10px;
+    left: 12px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     z-index: 97;
     padding: 10px 10px 9px 60px;
     background-color: #fff;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    -webkit-transform-origin: left;
-            transform-origin: left;
+    border-radius: 50px;
+    -webkit-transform-origin: 16px;
+            transform-origin: 16px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
   .header-top-menu_active {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
     -webkit-box-shadow: 2px 2px 5px #000;
             box-shadow: 2px 2px 5px #000;
   }
@@ -1044,8 +1036,8 @@ input:focus, button:focus, textarea:focus {
   .header-top-menu {
     top: -45px;
     left: 10px;
-    padding: 10px 10px 9px 40px;
-    border-radius: 5px;
+    padding: 5px 25px 5px 40px;
+    border-radius: 18px;
     -webkit-transform-origin: center;
             transform-origin: center;
     -webkit-transform: translateX(-120%);
@@ -1054,7 +1046,6 @@ input:focus, button:focus, textarea:focus {
   .header-top-menu_active {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    border: 5px;
   }
   .header-top-menu ul {
     -webkit-box-orient: vertical;
@@ -1063,12 +1054,6 @@ input:focus, button:focus, textarea:focus {
             flex-direction: column;
   }
   .header-top-menu ul a li {
-    padding-top: 10px;
-  }
-  .hamburger-btn {
-    border-radius: 5px;
-  }
-  .hamburger_active .hamburger-btn {
-    border-radius: 5px;
+    padding: 5px 0;
   }
 }

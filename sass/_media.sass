@@ -47,8 +47,7 @@
       background-color: #fff
       height: 35px
       width: 35px
-      border-top-right-radius: 5px
-      border-bottom-right-radius: 5px
+      border-radius: 50px
     span
       position: absolute
       top: 50%
@@ -65,9 +64,6 @@
         @extend %hamburger
         top: 5px
     &_active
-      .hamburger-btn
-        border-top-left-radius: 5px
-        border-bottom-left-radius: 5px
       span
         &:before
           transform-origin: right bottom
@@ -88,20 +84,16 @@
       &-menu
         position: fixed
         top: -45px
-        left: 10px
+        left: 12px
         transition: 0.5s
         z-index: 97
         padding: 10px 10px 9px 60px
         background-color: #fff
-        border-top-right-radius: 5px
-        border-bottom-right-radius: 5px
-        transform-origin: left
+        border-radius: 50px
+        transform-origin: 16px
         transform: rotate(180deg)
         &_active
           transform: rotate(360deg)
-          // left: 10px
-          border-top-left-radius: 5px
-          border-bottom-left-radius: 5px
           box-shadow: 2px 2px 5px #000
         ul
           flex-direction: row
@@ -202,6 +194,7 @@
       font-size: 12px
     &-right
       font-size: 12px
+
 @media (max-width: 768px)
   .news
     &-one
@@ -233,22 +226,14 @@
         &-menu
           top: -45px
           left: 10px
-          padding: 10px 10px 9px 40px
-          border-radius: 5px
+          padding: 5px 25px 5px 40px
+          border-radius: 18px
           transform-origin: center
           transform: translateX(-120%)
           &_active
             transform: translateX(0px)
-            // left: 10px
-            border: 5px
           ul
             flex-direction: column
             a
               li
-                padding-top: 10px
-  .hamburger
-    &-btn
-      border-radius: 5px
-    &_active
-      .hamburger-btn
-        border-radius: 5px
+                padding: 5px 0
