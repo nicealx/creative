@@ -783,6 +783,7 @@ input:focus, button:focus, textarea:focus {
 }
 
 .toUp {
+  display: none;
   position: fixed;
   right: 20px;
   bottom: 20px;
