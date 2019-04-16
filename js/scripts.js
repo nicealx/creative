@@ -26,19 +26,22 @@ $('.hamburger-btn').on('click', () => {
 });
 
 const header = document.querySelector('#header'),
-      toUp = document.querySelector('.toUp');
+      toUp = document.querySelector('.toUp'),
+      posToUp = toUp.getBoundingClientRect();
 
-function up() {
-  toUp.addEventListener('click', () => {
-    header.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
+toUp.addEventListener('click', () => {
+  header.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
   });
-}
+});
 
-up();
-
+jQuery(function(f){
+  var element = f('.toUp');
+  f(window).scroll(function(){
+      element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);           
+  });
+});
 
 $('.multiple-items').slick({
   slidesToShow: 4,
