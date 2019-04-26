@@ -1,21 +1,25 @@
-// $('.header-bottom-scroll').click(function(){
-//   $('html, body').animate({ scrollTop: $('.feature').offset().top }, 500);
-// });
+$('a[href*="#"]').click(function(){
+  $('html, body').animate({ scrollTop: $('.feature').offset().top }, 500);
+});
 
-const scrollArrows = document.querySelectorAll('a[href="#"]');
+// const scrollArrows = document.querySelectorAll('a[href]');
 
-for(let scrollArrow of scrollArrows){
-    scrollArrow.addEventListener('click', (e) => {
-      e.preventDefault();
 
-      const id = scrollArrow.getAttribute('href');
 
-      document.querySelector('' + id).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-      });
-    });
-}
+// for(let scrollArrow of scrollArrows){
+//   let id = scrollArrow.getAttribute("href");
+//   if(id.charAt('#')) {
+//     scrollArrow.addEventListener('click', e => {
+//       e.preventDefault();
+
+
+//         document.querySelector(id).scrollIntoView({
+//             behavior: 'smooth',
+//             block: 'start'
+//         });
+//       });
+//     }
+// }
 
 
 
@@ -26,8 +30,7 @@ $('.hamburger-btn').on('click', () => {
 });
 
 const header = document.querySelector('#header'),
-      toUp = document.querySelector('.toUp'),
-      posToUp = toUp.getBoundingClientRect();
+      toUp = document.querySelector('.toUp');
 
 toUp.addEventListener('click', () => {
   header.scrollIntoView({
