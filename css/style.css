@@ -81,7 +81,7 @@ input:focus, button:focus, textarea:focus {
   color: #ffffff;
 }
 
-.header a {
+.hamburger-btn {
   color: #ffffff;
   text-decoration: none;
 }
