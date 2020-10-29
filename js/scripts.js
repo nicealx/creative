@@ -23,7 +23,8 @@ $('a[href*="#"]').click(function(){
 
 
 
-$('.hamburger-btn').on('click', () => {
+$('.hamburger-btn').on('click', (e) => {
+  e.preventDefault();
   $('.hamburger').toggleClass('hamburger_active');
   $('.header-top-menu').toggleClass('header-top-menu_active');
   $('.mobile-menu__link').removeClass('header-top-menu_active');
